@@ -31,6 +31,7 @@ function msUntilNextWindow(): number {
   console.log("Window is open! Extracting flag...");
 
   const tx = new Transaction();
+  tx.setGasBudget(100_000_000); // 0.1 SUI
   const result_0 = tx.moveCall({
     target: `${PACKAGE}::moving_window::extract_flag`,
     arguments: [tx.object(CLOCK)],

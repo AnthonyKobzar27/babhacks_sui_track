@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "init-keypair": "tsx src/init.ts",
+    "faucet": "tsx src/faucet.ts",
     "moving-window": "tsx src/moving_window.ts",
     "merchant": "tsx src/merchant.ts",
     "lootboxes": "tsx src/lootboxes.ts",
@@ -18,6 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.5.2",
+    "esbuild": "^0.27.2",
     "tsx": "^4.7.1",
     "typescript": "^5.5.4"
   }
